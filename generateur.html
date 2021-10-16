@@ -1,1 +1,764 @@
-aaa
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>#ReprenonsLePouvoir - Générateur</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">#RLP <sup>V1</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Accueil</span></a>
+            </li>
+
+            
+
+            <!-- Divider -->
+            <hr class="sidebar-divider" style="margin: 0 1rem 0;">
+
+            <!-- Heading -->
+            
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Animations</span></a>
+            </li>
+
+                        <!-- Divider -->
+                        <hr class="sidebar-divider">
+
+                        <!-- Heading -->
+                        <div class="sidebar-heading">
+                            Utiles
+                        </div>
+            
+                        
+            
+                        <!-- Nav Item - Tables -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="generateur.html">
+                                <i class="fas fa-fw fa-table"></i>
+                                <span>Générateur</span></a>
+                        </li>
+
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message 
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+            </div>-->
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="https://www.zupimages.net/up/21/41/266f.png" alt="..." style="height: 100%;">
+                <p class="text-center mb-2"><strong>#ReprenonsLePouvoir</strong> est une organisation d'HabboCity</p>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search 
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>-->
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) 
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>-->
+
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">1+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Changelog
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <!--<div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>-->
+                                    <div>
+                                        <div class="small text-gray-500">16 octobre 2021</div>
+                                        <span class="font-weight-bold">Ouverture du site en version 1</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <!--<div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>-->
+                                    <div>
+                                        <div class="small text-gray-500">16 octobre 2021</div>
+                                        Lancement du système des animations et récompenses (Hotel)
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <!--<div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>-->
+                                    <div>
+                                        <div class="small text-gray-500">27 septembre 2021</div>
+                                        Lancement du système des animations et récompenses (Forum)
+                                    </div>
+                                </a>
+                                <!--<a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>-->
+                            </div>
+                        </li>
+
+                        
+                        </li>
+                    
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Générateur d'avatar</h1>
+                    <p class="mb-4">Pratique pour avoir son avatar.</p>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Générateur d'avatar</h6>
+                        </div>
+                        <div class="card-body">
+                           
+
+<!-- Links icons -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css"
+/>
+<link
+rel="stylesheet"
+id="fontawesome-css"
+href="https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1"
+type="text/css"
+media="all"
+/>
+<!-- Fim icons -->
+
+<!--Originalmente desenvolvido por Marco Cuel e Mateus Melo.
+
+Edições e adaptação para o Habblive por <b>voXes</b>.-->
+
+<!-- https://codepen.io/vkassiel -->
+
+<div class="habbo-imager">
+    <div class="esquerda">
+    
+    
+      
+      <!--<div class="info hotel" style="width: 30px"></div>
+      <select id="hotel" name="hotel" class="hotel">
+        <option selected="selected" id="hotel" value="api.habbocity.me">
+          HabboCity
+        </option>
+      </select>-->
+    
+      <div class="clearfix"></div>
+	
+		<a id="img_link" target="_blank" href="https://api.habbocity.me/avatar_image.php?user=Niko">
+			<div class="habbo">
+				<img align='middle' alt="" id="img" src="https://api.habbocity.me/avatar_image.php?user=Niko">
+			</div>
+		</a>
+
+        <div id="h_l" class="botao">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
+          <div class="msg m-g">Tête</div>
+          <div id="h_r" class="botao btn-r">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+
+		<div class="clearfix"></div>
+
+        <div id="b_l" class="botao">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
+          <div class="msg m-g">Corps</div>
+          <div id="b_r" class="botao btn-r">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+
+    </div>
+
+	<div class="direita">
+		<div class="info">Pseudo</div>
+		<input id="usuario" placeholder="Niko" name="user" type="text">
+
+        <div class="info">Expression</div>
+        <select id="rosto" name="rosto">
+          <option value="std">Normal</option>
+          <option value="spk">Parlant</option>
+          <option value="sml">Sourire</option>
+          <option value="srp">Surpris</option>
+          <option value="agr">Nerveux</option>
+          <option value="sad">Triste</option>
+          <option value="eyb">Yeux fermer</option>
+        </select>
+
+        <div class="info">Action</div>
+        <select id="acao" name="acao">
+          <option value="std">Normal</option>
+          <option value="wlk">Marche</option>
+          <option value="wav">Salue</option>
+          <option value="sit">Assis</option>
+          <option value="sit-wav">Surprise</option>
+          <option value="lay">Coucher</option>
+        </select>
+
+        <div class="info">Taille</div>
+  
+        <input
+          type="radio"
+          name="tamanho"
+          id="tamanho"
+          class="tamanho"
+          value="s"
+        />
+        <div class="msg" style="margin-right: 30px">Petit</div>
+        <input
+          type="radio"
+          checked
+          name="tamanho"
+          id="tamanho"
+          class="tamanho"
+          value="n"
+        />
+        <div class="msg" style="margin-right: 30px">Normal</div>
+        <input
+          type="radio"
+          name="tamanho"
+          id="tamanho"
+          class="tamanho"
+          value="l"
+        />
+        <div class="msg">Grand</div>
+
+		<div class="clearfix"></div>
+
+		<!--<div class="info">Objeto</div>
+		<select id="objeto" name="objeto">
+			<option value="">Nenhum</option>
+			<option value="0" >Nada (Objeto imaginário)</option>
+			<option value="1" >Água</option>
+			<option value="44" >Bebida Tóxica</option>
+			<option value="6" >Café</option>
+			<option value="2" >Cenoura</option>
+			<option value="42" >Chá Japonês</option>
+			<option value="667" >Coquetel</option>
+			<option value="5" >Habbo Refri</option>
+			<option value="9" >Poção do Amor</option>
+			<option value="3" >Sorvete</option>
+			<option value="33" >Sorvete (Callipo)</option>
+			<option value="43" >Suco de Tomate</option>
+		</select>-->
+        <div class="info">Objet</div>
+  <select id="objeto" name="objeto">
+    <option value="">Fonction pas disponible</option>
+  </select>
+
+		<div class="clearfix"></div>
+        <div id="bb">
+            <input
+              type="checkbox"
+              class="bc"
+              name="bbcc"
+              id="bbcc"
+              value=",drk="
+            />
+            <div class="msg">Boire/Manger</div>
+          </div>
+		<div class="clearfix"></div>
+
+		<div class="info">URL</div>
+		<input type="text" id="url_img" value="https://api.habbocity.me/avatar_image.php?user=Niko"/>
+
+        <div class="clearfix"></div>
+        <div class="info"></div>
+        <input
+          style="border-radius: 5px"
+          type="checkbox"
+          name="cabeca"
+          class="cabeca"
+          id="cabeca"
+          value="1"
+        />
+        <div class="msg">Juste la tête</div>
+      </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+
+
+
+<style>/* Design & front-end by Marco Cuel (Bromarks)*/
+
+
+
+    body {
+        background-color: #FFFFFF;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    :focus {outline: 0;}
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    .habbo-imager .esquerda {
+        width: 200px;
+        float: left;
+    }
+    
+    .habbo-imager .direita {
+        width: calc(100% - 210px);
+        float: right;
+    }
+    
+    .habbo-imager input, select {
+        background-color: #fff;
+        width: calc(100% - 100px);
+        height: 40px;
+        padding: 0 20px;
+        color: #666666;
+        margin-bottom: 10px;
+        border: none;
+        float: right;
+      border-radius: 0px 5px 5px 0px;
+        font-family: 'Questrial', sans-serif;
+        position: relative;
+      box-shadow: inset 0 -4px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.25), 0 4px rgba(0,0,0,0.1);
+    }
+    
+    .habbo-imager select {
+        background-image: url(https://2.bp.blogspot.com/-YXLWWzMHa5E/Vztpjo0x8pI/AAAAAAAAFKQ/WS3OeDhZDx8H2AcBFa9FeX6WvZJb7GgHgCLcB/s1600/seta.png);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .habbo-imager select:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+
+    
+    .habbo-imager .bc {
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 4px 4px;
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-left: 40px;
+        margin-right: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    
+    input[type="radio"]:before, input[type="checkbox"]:before {
+        width: 28px;
+        height: 28px;
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        color: #666666;
+    }
+    
+    input[type="radio"]:checked:before {
+        content: "\f111";
+        font-family: "FontAwesome";
+        font-size: 16px;
+      font-weight: 900;
+        text-align: center;
+        margin-top: 4px;
+    }
+    
+    input[type="checkbox"]:checked:before {
+        content: "\f00c";
+        font-family: "FontAwesome";
+        font-size: 16px;
+      font-weight: 900;
+        text-align: center;
+        margin-top: 4px;
+    }
+    
+    .habbo-imager .tamanho {
+      background-color: #FFFFFF;
+      border: none;
+      border-radius: 5px 5px;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      float: left;
+      margin-left: 20px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    
+    .habbo-imager .botao {
+        background-color: #2E55C7;
+        border: none;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        float: left;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        box-shadow: inset 0 -4px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.25), 0 4px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+    
+    .habbo-imager .botao i {
+        margin-top: 12px;
+    }
+    
+    .habbo-imager .m-g {
+        line-height: 40px;
+        width: 80px;
+        text-align: center;
+    }
+    
+    .habbo-imager .botao.btn-r {
+        float: right;
+        margin-right: 10px;
+    }
+    
+    .habbo-imager .cabeca {
+        background-color: #FFF;
+        border: none;
+        width: 30px;
+        height: 30px;
+        float: left;
+      padding: 5px;
+        margin-left: 20px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    
+    .habbo-imager .msg {
+        float: left;
+        color: #999999;
+        line-height: 34px;
+        margin-left: 10px;
+    }
+    
+    .habbo-imager .info {
+        background-color: #303640;
+        border-radius: 5px 0px 0px 5px;
+        width: 99px;
+        padding: 0 10px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        box-shadow: inset 0 -3px rgba(0,0,0,0.1), inset 0 0 30px rgba(0,0,0,0.2), 3px 0 3px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 10;
+        margin-bottom: 10px;
+        float: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+      box-shadow: inset 0 -4px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.25), 0 4px rgba(0,0,0,0.1);
+    }
+    
+    .habbo-imager .info.hotel {
+        background-image: url(https://3.bp.blogspot.com/-P5GY4qoYEYg/VztpjlW_egI/AAAAAAAAFKU/4XGGDKkzDFMhjAxZ1TZ4_C4PeOdjMFA2wCLcB/s1600/hotel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+    }
+    
+    .habbo-imager select.hotel {
+        width: calc(100% - 40px);
+    }
+    
+    .habbo-imager .habbo {
+        background-color: #fff;
+        background-image: url(https://i.imgur.com/PAIFiy5.png);
+        height: 236px;
+      border-radius: 5px;
+        position: relative;
+      box-shadow: inset 0 -4px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.25), 0 4px rgba(0,0,0,0.1);
+        margin-bottom: 7px;
+    }
+    
+    .habbo-imager .habbo img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #bb {
+        display: none;
+    }</style>
+
+
+<script>// JS & back-end scripts by Mateus Melo (teuscm)
+
+    $(document).ready(function() {
+        dir = [2, 2];
+        function HabboImager() {
+            var hotel = $("#hotel").val();
+            if ($("#usuario").val().length === 0) {
+                var habbo = $("#usuario").attr("placeholder");
+            } else {
+                var habbo = $("#usuario").val();
+            }
+            if ($("#objeto").val().length === 0) {
+                $("#bb").hide('slow');
+                var action = $("#acao").val();
+            } else if ($("input[name=bbcc]:checked").length === 1) {
+                $("#bb").show();
+                var action = $("#acao").val()+",drk="+$("#objeto").val();
+            } else {
+                $("#bb").show('slow');
+                var action = $("#acao").val()+",crr="+$("#objeto").val();
+            }
+            if ($("input[name=cabeca]:checked").length === 0) {
+                var head = 0;
+            } else {
+                var head = 1;
+            }
+            var gesture = $("#rosto").val();
+        var formato = $("#formato").val();
+            var size = $("input[name=tamanho]:checked").val();
+             var url = "https://api.habbocity.me/avatar_image.php?user="+habbo+"&action="+action+"&size="+size+"&head_direction="+dir[1]+"&direction="+dir[0]+"&gesture="+gesture+"&headonly="+head+"";
+            $("#img").attr("src", url);
+            $("#url_img").attr("value", url);
+            $("#img_link").attr("href", url);
+        }
+        $("#usuario").keyup(HabboImager);
+        $("#h_l").click(function() {
+            if (dir[1] < 7) dir[1] = dir[1] + 1;
+        });
+        $("#h_r").click(function() {
+            if (dir[1] > 0) dir[1] = dir[1] - 1;
+        });
+        $("#b_l").click(function() {
+            if (dir[0] < 7) dir[0] = dir[0] + 1;
+        });
+        $("#b_r").click(function() {
+            if (dir[0] > 0) dir[0] = dir[0] - 1;
+        });
+        $("#acao, #rosto, #objeto, #formato, #hotel").change(HabboImager);
+        $("input[name=tamanho], #bbcc, #cabeca, #h_l, #h_r, #b_l, #b_r").click(HabboImager);
+        $("#bb").hide();
+        $("#url_img").mouseenter(function() {
+            this.focus();
+            this.select(); 
+        }).mouseleave(function() {
+            this.blur();
+        });
+    });</script>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>
