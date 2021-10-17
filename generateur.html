@@ -407,6 +407,13 @@ Edições e adaptação para o Habblive por <b>voXes</b>.-->
           value="1"
         />
         <div class="msg">Juste la tête</div>
+        <div class="clearfix"></div>
+        
+		<div class="info">Format</div>
+		<select id="formato" name="formato">
+			<option value="png">PNG</option>
+			<option value="gif">GIF</option>
+		</select>
       </div>
       </div>
 
@@ -667,7 +674,7 @@ Edições e adaptação para o Habblive por <b>voXes</b>.-->
             var gesture = $("#rosto").val();
         var formato = $("#formato").val();
             var size = $("input[name=tamanho]:checked").val();
-             var url = "https://api.habbocity.me/avatar_image.php?user="+habbo+"&action="+action+"&size="+size+"&head_direction="+dir[1]+"&direction="+dir[0]+"&gesture="+gesture+"&headonly="+head+"";
+             var url = "https://api.habbocity.me/avatar_image.php?user="+habbo+"&action="+action+"&size="+size+"&head_direction="+dir[1]+"&img_format="+formato+"&direction="+dir[0]+"&gesture="+gesture+"&headonly="+head+"";
             $("#img").attr("src", url);
             $("#url_img").attr("value", url);
             $("#img_link").attr("href", url);
